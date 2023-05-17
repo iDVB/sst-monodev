@@ -27,7 +27,7 @@ export class NextjsSite extends sst.NextjsSite {
       ...rest,
     })
 
-    stack.addOutputs({ SERVICE, STAGE, GIT_REPOSITORY, GIT_BRANCH })
+    stack.addOutputs({ SERVICE, STAGE, GIT_REPOSITORY, GIT_BRANCH, THINGY: 'thingy' })
   }
 }
 

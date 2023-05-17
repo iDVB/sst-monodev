@@ -9,6 +9,9 @@
     "sites/*/next-app/"
   ],
   "scripts": {
+    "dev": "pnpm run dev:constructs & pnpm run dev:sites",
+    "dev:constructs": "cd packages/myconstructs && pnpm run dev",
+    "dev:sites": "cd sites/mysite && pnpm run dev",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(tsx|js|ts|json)\""
   },
   "dependencies": {},
